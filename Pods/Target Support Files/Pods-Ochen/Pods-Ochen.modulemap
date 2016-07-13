@@ -1,0 +1,6 @@
+framework module Pods_Ochen {
+  umbrella header "Pods-Ochen-umbrella.h"
+
+  export *
+  module * { export * }
+}

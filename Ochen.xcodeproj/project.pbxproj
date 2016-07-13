@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BD37B82B0EEF8D6AADA4330 /* Pods_Ochen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273D15BDCA7E39C3E249C0E8 /* Pods_Ochen.framework */; };
+		8D01DBF81D3620E4009F44A7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D01DBF71D3620E4009F44A7 /* Helpers.swift */; };
+		8D01DBFC1D362F01009F44A7 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D01DBFA1D362F01009F44A7 /* Location+CoreDataProperties.swift */; };
+		8D01DBFD1D362F01009F44A7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D01DBFB1D362F01009F44A7 /* Location.swift */; };
+		8D1B288A1D3616F100C50056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B28891D3616F100C50056 /* AppDelegate.swift */; };
+		8D1B288F1D3616F100C50056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B288D1D3616F100C50056 /* Main.storyboard */; };
+		8D1B28921D3616F100C50056 /* Ochen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B28901D3616F100C50056 /* Ochen.xcdatamodeld */; };
+		8D1B28941D3616F100C50056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B28931D3616F100C50056 /* Assets.xcassets */; };
+		8D1B28971D3616F100C50056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B28951D3616F100C50056 /* LaunchScreen.storyboard */; };
+		8D1B289F1D36184900C50056 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B289E1D36184900C50056 /* MainTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		273D15BDCA7E39C3E249C0E8 /* Pods_Ochen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ochen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		511BCA36894EF409A874D667 /* Pods-Ochen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ochen.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ochen/Pods-Ochen.release.xcconfig"; sourceTree = "<group>"; };
+		5373065B8B3B509C12005820 /* Pods-Ochen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ochen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ochen/Pods-Ochen.debug.xcconfig"; sourceTree = "<group>"; };
+		8D01DBF71D3620E4009F44A7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		8D01DBFA1D362F01009F44A7 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8D01DBFB1D362F01009F44A7 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8D1B28861D3616F100C50056 /* Ochen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ochen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1B28891D3616F100C50056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D1B288E1D3616F100C50056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D1B28911D3616F100C50056 /* Ochen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ochen.xcdatamodel; sourceTree = "<group>"; };
+		8D1B28931D3616F100C50056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D1B28961D3616F100C50056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D1B28981D3616F100C50056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1B289E1D36184900C50056 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D1B28831D3616F100C50056 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BD37B82B0EEF8D6AADA4330 /* Pods_Ochen.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D01DBF91D362EF2009F44A7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8D01DBFA1D362F01009F44A7 /* Location+CoreDataProperties.swift */,
+				8D01DBFB1D362F01009F44A7 /* Location.swift */,
+				8D1B28901D3616F100C50056 /* Ochen.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		8D1B287D1D3616F000C50056 = {
+			isa = PBXGroup;
+			children = (
+				8D1B28881D3616F100C50056 /* Ochen */,
+				8D1B28871D3616F100C50056 /* Products */,
+				CEEEEF9BC05753D8D1EF1537 /* Pods */,
+				A4DEF2F8F519FD48A8C0E507 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8D1B28871D3616F100C50056 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1B28861D3616F100C50056 /* Ochen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D1B28881D3616F100C50056 /* Ochen */ = {
+			isa = PBXGroup;
+			children = (
+				8D01DBF91D362EF2009F44A7 /* CoreData */,
+				8D1B28891D3616F100C50056 /* AppDelegate.swift */,
+				8D1B289E1D36184900C50056 /* MainTableViewController.swift */,
+				8D1B288D1D3616F100C50056 /* Main.storyboard */,
+				8D1B28931D3616F100C50056 /* Assets.xcassets */,
+				8D1B28951D3616F100C50056 /* LaunchScreen.storyboard */,
+				8D1B28981D3616F100C50056 /* Info.plist */,
+				8D01DBF71D3620E4009F44A7 /* Helpers.swift */,
+			);
+			path = Ochen;
+			sourceTree = "<group>";
+		};
+		A4DEF2F8F519FD48A8C0E507 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				273D15BDCA7E39C3E249C0E8 /* Pods_Ochen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEEEEF9BC05753D8D1EF1537 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5373065B8B3B509C12005820 /* Pods-Ochen.debug.xcconfig */,
+				511BCA36894EF409A874D667 /* Pods-Ochen.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1B28851D3616F100C50056 /* Ochen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D1B289B1D3616F100C50056 /* Build configuration list for PBXNativeTarget "Ochen" */;
+			buildPhases = (
+				FC3D3C6192D510047F665DB0 /* [CP] Check Pods Manifest.lock */,
+				8D1B28821D3616F100C50056 /* Sources */,
+				8D1B28831D3616F100C50056 /* Frameworks */,
+				8D1B28841D3616F100C50056 /* Resources */,
+				AF5CA349DE88F2FD5B90195C /* [CP] Embed Pods Frameworks */,
+				02052E5A1BED89FEB2EEB85B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ochen;
+			productName = Ochen;
+			productReference = 8D1B28861D3616F100C50056 /* Ochen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D1B287E1D3616F000C50056 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ru.testing.project;
+				TargetAttributes = {
+					8D1B28851D3616F100C50056 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8D1B28811D3616F000C50056 /* Build configuration list for PBXProject "Ochen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D1B287D1D3616F000C50056;
+			productRefGroup = 8D1B28871D3616F100C50056 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1B28851D3616F100C50056 /* Ochen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1B28841D3616F100C50056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1B28971D3616F100C50056 /* LaunchScreen.storyboard in Resources */,
+				8D1B28941D3616F100C50056 /* Assets.xcassets in Resources */,
+				8D1B288F1D3616F100C50056 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02052E5A1BED89FEB2EEB85B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ochen/Pods-Ochen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF5CA349DE88F2FD5B90195C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ochen/Pods-Ochen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC3D3C6192D510047F665DB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D1B28821D3616F100C50056 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1B289F1D36184900C50056 /* MainTableViewController.swift in Sources */,
+				8D1B28921D3616F100C50056 /* Ochen.xcdatamodeld in Sources */,
+				8D1B288A1D3616F100C50056 /* AppDelegate.swift in Sources */,
+				8D01DBF81D3620E4009F44A7 /* Helpers.swift in Sources */,
+				8D01DBFD1D362F01009F44A7 /* Location.swift in Sources */,
+				8D01DBFC1D362F01009F44A7 /* Location+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D1B288D1D3616F100C50056 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D1B288E1D3616F100C50056 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8D1B28951D3616F100C50056 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D1B28961D3616F100C50056 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D1B28991D3616F100C50056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D1B289A1D3616F100C50056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D1B289C1D3616F100C50056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5373065B8B3B509C12005820 /* Pods-Ochen.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ochen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.testing.project.Ochen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8D1B289D1D3616F100C50056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 511BCA36894EF409A874D667 /* Pods-Ochen.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ochen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.testing.project.Ochen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D1B28811D3616F000C50056 /* Build configuration list for PBXProject "Ochen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1B28991D3616F100C50056 /* Debug */,
+				8D1B289A1D3616F100C50056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D1B289B1D3616F100C50056 /* Build configuration list for PBXNativeTarget "Ochen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1B289C1D3616F100C50056 /* Debug */,
+				8D1B289D1D3616F100C50056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8D1B28901D3616F100C50056 /* Ochen.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8D1B28911D3616F100C50056 /* Ochen.xcdatamodel */,
+			);
+			currentVersion = 8D1B28911D3616F100C50056 /* Ochen.xcdatamodel */;
+			path = Ochen.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8D1B287E1D3616F000C50056 /* Project object */;
+}
