@@ -11,7 +11,11 @@ import CoreData
 
 
 class Location: NSManagedObject {
-  // Insert code here to add functionality to your managed object subclass
-  
-  
+  convenience init() {
+    // Description
+    let entity = NSEntityDescription.entityForName("Location", inManagedObjectContext: CoreDataManager.instance.managedObjectContext)
+    
+    // New object creation
+    self.init(entity: entity!, insertIntoManagedObjectContext: CoreDataManager.instance.managedObjectContext)
+  }
 }

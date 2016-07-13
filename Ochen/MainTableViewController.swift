@@ -9,8 +9,6 @@
 import UIKit
 import Foundation
 
-import SwiftyJSON
-
 class MainTableViewController: UITableViewController {
   
   var dataSource: [Int] = []
@@ -24,43 +22,15 @@ class MainTableViewController: UITableViewController {
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     
-    
-    fetchData {
-      print($0)
+    MainViewModel.instance.fetchData {
+      guard let locations = $0 else {return}
+      print(locations[0])
     }
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
-  }
-}
-
-// MARK: - Data management
-extension MainTableViewController {
-  func fetchData(completionHandler: ([Int]?) -> ()) {
-    let session = NSURLSession(configuration: .defaultSessionConfiguration())
-    let request = NSURLRequest(URL: NSURL(string: "https://dl.dropboxusercontent.com/u/32448889/TetsTask/places_25_06.json")!, cachePolicy: .ReturnCacheDataElseLoad, timeoutInterval: 20.0)
-    session.dataTaskWithRequest(request) { (data, response, error) in
-      guard error == nil else {
-        print(error)
-        completionHandler(nil)
-        return
-      }
-      
-      guard let dataObject = data else {
-        completionHandler(nil)
-        return
-      }
-      
-      let json = JSON(data: dataObject)
-      
-      var locations: [Location] = []
-      
-      
-      completionHandler([json["places"].arrayValue.count])
-      
-    }.resume()
   }
 }
 

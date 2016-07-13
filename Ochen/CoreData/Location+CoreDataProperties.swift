@@ -19,6 +19,6 @@ extension Location {
     @NSManaged var imageLink: String?
     @NSManaged var latitude: Double
     @NSManaged var longitude: Double
-    @NSManaged var name: String?
+    @NSManaged var name: String
 
 }
