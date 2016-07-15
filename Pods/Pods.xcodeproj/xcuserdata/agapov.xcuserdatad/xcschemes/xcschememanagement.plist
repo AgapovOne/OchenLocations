@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Nuke.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Ochen.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>693D3C9001F95AD57CA12FD81F3F1ABC</key>
+		<key>136D7B10694D09389B2FEE896025352B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7926DBBF2B2055570A301149664971B2</key>
+		<key>415EE40E5DCD4D9E59E0D58244F55248</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F21E8D0CF87BE5407DBB09F1AC3D43F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

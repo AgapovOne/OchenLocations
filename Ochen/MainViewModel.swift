@@ -12,8 +12,17 @@ import SwiftyJSON
 class MainViewModel {
   static let instance = MainViewModel()
   
-  func getTableData() {
-    <#function body#>
+  func getNetworkData(completionHandler: [GroupedLocation]? -> ()) {
+    fetchData { (locations) in
+      guard let locations = locations else {
+        completionHandler(nil)
+        return
+      }
+      
+      let groupedLocation = GroupedLocation(groupName: "All", locations: locations)
+      
+      completionHandler([groupedLocation])
+    }
   }
   
   func fetchData(completionHandler: ([Location]?) -> ()) {
@@ -46,6 +55,8 @@ class MainViewModel {
         
         locations.append(location)
       }
+      
+      CoreDataManager.instance.saveContext()
       
       completionHandler(locations)
       

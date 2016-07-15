@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="locationCell" rowHeight="80" id="ebH-BJ-CgF">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="locationCell" rowHeight="80" id="ebH-BJ-CgF" customClass="LocationTableViewCell" customModule="Ochen" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ebH-BJ-CgF" id="GrE-hx-oAz">
@@ -45,6 +45,11 @@
                                         <constraint firstAttribute="bottom" secondItem="Pyo-pO-xdK" secondAttribute="bottom" constant="4" id="iLo-Wy-xhI"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageView" destination="Pyo-pO-xdK" id="MB9-2D-cHl"/>
+                                    <outlet property="locationImage" destination="Pyo-pO-xdK" id="ucw-82-h9H"/>
+                                    <outlet property="nameLabel" destination="AmL-uf-rdi" id="ex6-25-PTa"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -63,6 +68,9 @@
                                 </attributes>
                             </fragment>
                         </attributedString>
+                        <connections>
+                            <action selector="refreshData:" destination="rhU-gz-5bd" eventType="valueChanged" id="sJE-0I-Cf9"/>
+                        </connections>
                     </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gz2-yG-572" userLabel="First Responder" sceneMemberID="firstResponder"/>

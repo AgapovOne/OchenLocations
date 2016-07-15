@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-
 class Location: NSManagedObject {
   convenience init() {
     // Description
@@ -18,4 +17,11 @@ class Location: NSManagedObject {
     // New object creation
     self.init(entity: entity!, insertIntoManagedObjectContext: CoreDataManager.instance.managedObjectContext)
   }
+}
+
+
+struct GroupedLocation {
+  // City name
+  var groupName: String
+  var locations: [Location]
 }

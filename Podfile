@@ -7,5 +7,6 @@ target 'Ochen' do
 
   # Pods for Ochen
   pod 'SwiftyJSON'
+  pod 'Nuke'
 
 end
