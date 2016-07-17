@@ -19,6 +19,7 @@
 		8D1B28941D3616F100C50056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B28931D3616F100C50056 /* Assets.xcassets */; };
 		8D1B28971D3616F100C50056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B28951D3616F100C50056 /* LaunchScreen.storyboard */; };
 		8D1B289F1D36184900C50056 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B289E1D36184900C50056 /* MainTableViewController.swift */; };
+		8D3A82961D3B7DA700195FD4 /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A82951D3B7DA700195FD4 /* MainDataSource.swift */; };
 		8D7FDAEF1D380CF200B66A9B /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7FDAEE1D380CF200B66A9B /* LocationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		8D1B28961D3616F100C50056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D1B28981D3616F100C50056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1B289E1D36184900C50056 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		8D3A82951D3B7DA700195FD4 /* MainDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
 		8D7FDAEE1D380CF200B66A9B /* LocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,10 +59,10 @@
 		8D01DBF91D362EF2009F44A7 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				8D01DBFE1D36C381009F44A7 /* CoreDataManager.swift */,
 				8D01DBFA1D362F01009F44A7 /* Location+CoreDataProperties.swift */,
 				8D01DBFB1D362F01009F44A7 /* Location.swift */,
 				8D1B28901D3616F100C50056 /* Ochen.xcdatamodeld */,
-				8D01DBFE1D36C381009F44A7 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -88,8 +90,10 @@
 			children = (
 				8D7FDAED1D38059500B66A9B /* Views */,
 				8D1B28891D3616F100C50056 /* AppDelegate.swift */,
-				8D01DC001D36D162009F44A7 /* MainViewModel.swift */,
+				8D7FDAEE1D380CF200B66A9B /* LocationTableViewCell.swift */,
 				8D1B289E1D36184900C50056 /* MainTableViewController.swift */,
+				8D3A82951D3B7DA700195FD4 /* MainDataSource.swift */,
+				8D01DC001D36D162009F44A7 /* MainViewModel.swift */,
 				8D01DBF71D3620E4009F44A7 /* Helpers.swift */,
 				8D01DBF91D362EF2009F44A7 /* CoreData */,
 				8D7FDAEC1D38058300B66A9B /* Supporting Files */,
@@ -111,7 +115,6 @@
 				8D1B288D1D3616F100C50056 /* Main.storyboard */,
 				8D1B28951D3616F100C50056 /* LaunchScreen.storyboard */,
 				8D1B28931D3616F100C50056 /* Assets.xcassets */,
-				8D7FDAEE1D380CF200B66A9B /* LocationTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				8D01DBFF1D36C381009F44A7 /* CoreDataManager.swift in Sources */,
 				8D01DBFC1D362F01009F44A7 /* Location+CoreDataProperties.swift in Sources */,
 				8D01DC011D36D162009F44A7 /* MainViewModel.swift in Sources */,
+				8D3A82961D3B7DA700195FD4 /* MainDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

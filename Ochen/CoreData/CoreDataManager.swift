@@ -18,6 +18,35 @@ class CoreDataManager {
     return NSEntityDescription.entityForName(entityName, inManagedObjectContext: self.managedObjectContext)!
   }
   
+  // Fetched Results Controller for Entity Name
+  func fetchedResultsController(entityName: String, keyForSort: String, sectionName:String) -> NSFetchedResultsController {
+    let fetchRequest = NSFetchRequest(entityName: entityName)
+    let sortDescriptor = NSSortDescriptor(key: keyForSort, ascending: true)
+    fetchRequest.sortDescriptors = [sortDescriptor]
+    let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: CoreDataManager.instance.managedObjectContext, sectionNameKeyPath: sectionName, cacheName: nil)
+    return fetchedResultsController
+  }
+  
+  // 
+  @available(iOS 9.0, *)
+  func deleteItems(entityName: String) {
+    // fetch all items in entity and request to delete them
+    let fetchRequest = NSFetchRequest(entityName: entityName)
+    let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+    
+    // delegate objects
+    let myManagedObjectContext = CoreDataManager.instance.managedObjectContext
+    let myPersistentStoreCoordinator = CoreDataManager.instance.persistentStoreCoordinator
+    
+    // perform the delete
+    do {
+      try myPersistentStoreCoordinator.executeRequest(deleteRequest, withContext: myManagedObjectContext)
+    } catch let error as NSError {
+      print(error)
+    }
+  }
+  
+  
   // MARK: - Core Data stack
   lazy var applicationDocumentsDirectory: NSURL = {
     // The directory the application uses to store the Core Data store file. This code uses a directory named "ru.testing.project.Ochen" in the application's documents Application Support directory.

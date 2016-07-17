@@ -12,20 +12,24 @@ import SwiftyJSON
 class MainViewModel {
   static let instance = MainViewModel()
   
-  func getNetworkData(completionHandler: [GroupedLocation]? -> ()) {
+  func getNetworkData(completionHandler: [Location]? -> ()) {
+    if #available(iOS 9.0, *) {
+      CoreDataManager.instance.deleteItems("Location")
+    } else {
+      // Fallback on earlier versions
+    }
+    
     fetchData { (locations) in
       guard let locations = locations else {
         completionHandler(nil)
         return
       }
       
-      let groupedLocation = GroupedLocation(groupName: "All", locations: locations)
-      
-      completionHandler([groupedLocation])
+      completionHandler(locations)
     }
   }
   
-  func fetchData(completionHandler: ([Location]?) -> ()) {
+  private func fetchData(completionHandler: ([Location]?) -> ()) {
     let session = NSURLSession(configuration: .defaultSessionConfiguration())
     let request = NSURLRequest(URL: NSURL(string: "https://dl.dropboxusercontent.com/u/32448889/TetsTask/places_25_06.json")!, cachePolicy: .ReturnCacheDataElseLoad, timeoutInterval: 20.0)
     session.dataTaskWithRequest(request) { (data, response, error) in
@@ -60,6 +64,6 @@ class MainViewModel {
       
       completionHandler(locations)
       
-      }.resume()
+    }.resume()
   }
 }

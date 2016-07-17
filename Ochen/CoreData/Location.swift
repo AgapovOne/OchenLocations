@@ -18,10 +18,3 @@ class Location: NSManagedObject {
     self.init(entity: entity!, insertIntoManagedObjectContext: CoreDataManager.instance.managedObjectContext)
   }
 }
-
-
-struct GroupedLocation {
-  // City name
-  var groupName: String
-  var locations: [Location]
-}
