@@ -54,7 +54,7 @@ class MainViewModel {
         location.name = obj["name"].stringValue
         location.descr = obj["description"].stringValue
         location.imageLink = obj["image"].string
-        location.longitude = obj["longitude"].doubleValue
+        location.longtitude = obj["longtitude"].doubleValue
         location.latitude = obj["latitude"].doubleValue
         
         locations.append(location)

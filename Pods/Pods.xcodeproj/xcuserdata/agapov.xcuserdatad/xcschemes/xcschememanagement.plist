@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AsyncSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Nuke.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>136D7B10694D09389B2FEE896025352B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>415EE40E5DCD4D9E59E0D58244F55248</key>
+		<key>0D3281B6CF6CBAC4ADD9F746EBF042AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>8F21E8D0CF87BE5407DBB09F1AC3D43F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>920C790E6279F41B2AD291444CC34097</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1DC35DB2C695031A72543555FB23729</key>
 		<dict>
 			<key>primary</key>
 			<true/>

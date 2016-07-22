@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import CoreData
 
+import Async
 import Nuke
 
 // MARK: - Table view data source
 class MainDataSource: NSObject, UITableViewDataSource {
   
-  var fetchedResultsController = CoreDataManager.instance.fetchedResultsController("Location", keyForSort: "name", sectionName: "city")
+  var fetchedResultsController = CoreDataManager.instance.fetchedResultsController("Location", keyForSort: "city", sectionName: "city")
   
   // MARK: - Table View Data Source
   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -40,16 +42,14 @@ class MainDataSource: NSObject, UITableViewDataSource {
     let name = location.name
     cell.nameLabel.text = name
     
-    if let imageLink = location.imageLink,
-       let url = NSURL(string: imageLink) {
-      var request = ImageRequest(URL: url)
-      request.targetSize = cell.locationImage.frame.size
-      
-      Nuke.taskWith(request) { response in
-        cell.locationImage.image = response.image
-        }.resume()
-    }
+    cell.locationImage.image = nil
     
+//    Async.background {
+      if let imageLink = location.imageLink,
+         let url = NSURL(string: imageLink) {
+        cell.locationImage.nk_setImageWith(url)
+      }
+//    }
     return cell
   }
 }

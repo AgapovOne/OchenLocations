@@ -9,10 +9,13 @@
 import UIKit
 import Foundation
 import CoreData
+import MapKit
 
 class MainTableViewController: UITableViewController {
   
   lazy var dataSource = MainDataSource()
+  
+  var filterRadius:Int = 1000
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -42,6 +45,8 @@ extension MainTableViewController {
   
   func fetchDataSource() {
     do {
+      let radius = self.filterRadius
+      
       try dataSource.fetchedResultsController.performFetch()
     } catch {
       print(error)
@@ -50,4 +55,29 @@ extension MainTableViewController {
     
     tableView.reloadData()
     self.refreshControl?.endRefreshing()  }
+}
+
+// MARK: - Navigation
+extension MainTableViewController {
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    let object = dataSource.fetchedResultsController.objectAtIndexPath(indexPath)
+
+    print(object)
+    tableView.deselectRowAtIndexPath(indexPath, animated: true)
+  }
+  
+  override func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    let cell = cell as? LocationTableViewCell
+    cell?.locationImage.nk_cancelLoading()
+  }
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "toLocation" {
+      let locationViewController: MainLocationViewController = segue.destinationViewController as! MainLocationViewController
+      
+      guard let cellIndex = tableView.indexPathForSelectedRow else {return}
+      let object = dataSource.fetchedResultsController.objectAtIndexPath(cellIndex) as? Location
+      locationViewController.location = object
+    }
+  }
 }

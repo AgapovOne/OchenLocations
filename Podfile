@@ -6,6 +6,7 @@ target 'Ochen' do
   use_frameworks!
 
   # Pods for Ochen
+  pod 'AsyncSwift'
   pod 'SwiftyJSON'
   pod 'Nuke'
 
